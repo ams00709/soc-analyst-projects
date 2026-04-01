@@ -18,3 +18,12 @@ index=linux_logs ("Failed password" OR "Accepted password")
 | search eventcount>3 AND action="success"
 ## Result
 The detection identifies suspicious IPs performing brute force attacks followed by successful login.
+## Fields Extracted
+- user
+- src_ip
+
+## Detection Method
+Used Splunk transaction to correlate failed and successful login events within a 2-minute window.
+
+## Attack Scenario
+Simulated SSH brute force attack where multiple failed attempts were followed by a successful login.
