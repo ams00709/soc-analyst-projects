@@ -20,3 +20,6 @@ index=linux_logs ("Failed password" OR "Accepted password")
 ```
 ## Outcome
 Detected brute force attack followed by successful compromise.
+## Python Script
+A simple python script to analyze SSH logs and detect brute force attempts.
+FILE: detection.py
