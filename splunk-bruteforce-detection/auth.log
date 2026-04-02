@@ -1,0 +1,9 @@
+Mar 30 12:39:45 kali sshd[3074]: Failed password for admin from 192.168.1.10 port 22 ssh2
+Mar 30 12:39:47 kali sshd[3074]: Failed password for admin from 192.168.1.10 port 22 ssh2
+Mar 30 12:39:50 kali sshd[3074]: Failed password for admin from 192.168.1.10 port 22 ssh2
+Mar 30 12:39:55 kali sshd[3074]: Accepted password for admin from 192.168.1.10 port 22 ssh2
+Mar 30 12:41:10 kali sshd[3080]: Failed password for user test from 192.168.1.20 port 22 ssh2
+Mar 30 12:41:15 kali sshd[3080]: Failed password for user test from 192.168.1.20 port 22 ssh2
+Mar 30 12:42:01 kali sshd[3090]: Failed password for root from 10.0.0.5 port 22 ssh2
+Mar 30 12:42:03 kali sshd[3090]: Failed password for root from 10.0.0.5 port 22 ssh2
+Mar 30 12:42:05 kali sshd[3090]: Failed password for root from 10.0.0.5 port 22 ssh2
