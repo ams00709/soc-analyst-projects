@@ -3,44 +3,27 @@ import re
 count = {}
 users = {}
 
-logs = [
-    "Failed password for admin from 192.168.1.10 port 22 ssh2",
-    "Failed password for root from 10.0.0.5 port 22 ssh2",
-    "Failed password for admin from 192.168.1.10 port 22 ssh2",
-    "Accepted password for user from 8.8.8.8 port 22 ssh2",
-    "Failed password for test from 172.16.0.3 port 22 ssh2",
-    "Failed password for root from 10.0.0.5 port 22 ssh2",
-    "Failed password for root from 10.0.0.5 port 22 ssh2"
-]
+with open("auth.log", "r") as f:
+    logs = f.readlines()
 
 for line in logs:
-    if "Failed" in line:
+    if "Failed password" in line:
         pattern = re.search(r"for (\w+) from (\d+\.\d+\.\d+\.\d+)", line)
-        ip = pattern.group(2)
-        user = pattern.group(1)
+        
+        if pattern:
+            ip = pattern.group(2)
+            user = pattern.group(1)
 
-        if ip not in count:
-            count[ip] = 1
-        else:
-            count[ip] += 1
+            count[ip] = count.get(ip, 0) + 1
+            users[user] = users.get(user, 0) + 1
 
-        if user not in users:
-            users[user] = 1
-        else:
-            users[user] += 1
-
+print("=== Failed Attempts by IP ===")
 for ip in count:
     print(ip, " --> ", count[ip])
 
+print("\n=== Failed Attempts by User ===")
 for user in users:
     print(user, " --> ", users[user])
 
-max_count = 0
-max_ip = ""
-
-for ip in count:
-    if count[ip] > max_count:
-        max_count = count[ip]
-        max_ip = ip
-
-print("most attacking ip:", max_ip)
+max_ip = max(count, key=count.get)
+print("\nMost attacking ip:", max_ip)
