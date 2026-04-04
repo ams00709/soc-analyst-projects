@@ -23,6 +23,7 @@ This repository contains hands-on cybersecurity projects focused on SOC analysis
 - Linux
 - Burp Suite
 - Wireshark
+- Network analyzer 
 
 ## About Me
 
