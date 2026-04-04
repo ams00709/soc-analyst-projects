@@ -58,15 +58,5 @@ DNS → HTTP
 
 ---
 
-## 📷 Screenshots
-
-### DNS Query & Response
-![DNS](images/dns.png)
-
-### HTTP GET Request
-![HTTP](images/http.png)
-
----
-
 ## 🚀 Additional Note
 This project demonstrates practical network analysis skills relevant to SOC and entry-level cybersecurity roles.
