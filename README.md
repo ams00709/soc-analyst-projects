@@ -14,7 +14,7 @@ This repository contains hands-on cybersecurity projects focused on SOC analysis
 - Brute Force Detection
 - Regex (IP & User extraction)
 - Python for log analysis
-- Networking fundamentals
+- Networking fundamentals 
 
 ## Tools Used
 
@@ -22,6 +22,7 @@ This repository contains hands-on cybersecurity projects focused on SOC analysis
 - Python
 - Linux
 - Burp Suite
+- Wireshark
 
 ## About Me
 
