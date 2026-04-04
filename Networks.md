@@ -1,14 +1,14 @@
 Network Traffic Analysis using Wireshark
-🎯 Objective
+##🎯 Objective
 Analyze network traffic using Wireshark to understand how a client resolves a domain (DNS) and communicates with a web server using HTTP.
-🔍 Scenario
+##🔍 Scenario
 A user accessed the following website:
 
 http://example.com
 The goal is to analyze the full communication flow:
 DNS resolution (domain → IP)
 HTTP request (client → server)
-🧠 Analysis Steps
+##🧠 Analysis Steps
 1. DNS Analysis
 Captured a DNS query for:
 
@@ -28,12 +28,12 @@ User-Agent: Mozilla/5.0 ...
 3. Traffic Correlation
 The client first performed a DNS query to resolve the domain
 After receiving the IP, it sent an HTTP GET request to the server
-👉 This demonstrates the full communication flow:
+##👉 This demonstrates the full communication flow:
 
 DNS → HTTP
-🛠️ Tools Used
+##🛠️ Tools Used
 Wireshark
-📌 Key Takeaways
+##📌 Key Takeaways
 DNS translates domain names into IP addresses
 HTTP enables communication between client and server
 Traffic correlation is essential for network analysis and SOC investigations
