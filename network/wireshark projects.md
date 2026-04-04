@@ -37,6 +37,8 @@ Wireshark
 DNS translates domain names into IP addresses
 HTTP enables communication between client and server
 Traffic correlation is essential for network analysis and SOC investigations
-
+📷 Screenshots
+DNS Query & Response
+HTTP GET Request
 🚀 Additional Note
 This project demonstrates practical network analysis skills relevant to SOC and networking roles.
